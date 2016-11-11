@@ -1,10 +1,16 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
 {\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Georgia;\f2\fmodern\fcharset0 Courier;
 \f3\fswiss\fcharset0 ArialMT;}
 {\colortbl;\red255\green255\blue255;\red217\green11\blue0;\red201\green20\blue39;\red254\green253\blue249;
-\red27\green29\blue31;\red235\green236\blue237;\red0\green61\blue204;\red43\green71\blue20;\red0\green45\blue153;
-\red32\green0\blue99;\red0\green31\blue103;\red247\green247\blue247;\red20\green0\blue65;\red49\green49\blue49;
-\red38\green38\blue38;\red242\green242\blue242;\red26\green26\blue26;}
+\red27\green29\blue31;\red235\green236\blue237;\red255\green255\blue255;\red0\green61\blue204;\red43\green71\blue20;
+\red0\green45\blue153;\red27\green29\blue31;\red235\green236\blue237;\red32\green0\blue99;\red0\green31\blue103;
+\red247\green247\blue247;\red20\green0\blue65;\red49\green49\blue49;\red38\green38\blue38;\red242\green242\blue242;
+\red26\green26\blue26;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c85098\c4314\c0;\csgenericrgb\c78824\c7843\c15294;\csgenericrgb\c99608\c99216\c97647;
+\csgenericrgb\c10588\c11373\c12157;\csgenericrgb\c92157\c92549\c92941;\csgray\c100000;\csgenericrgb\c0\c23922\c80000;\csgenericrgb\c16863\c27843\c7843;
+\csgenericrgb\c0\c17647\c60000;\cssrgb\c14118\c15294\c16078;\cssrgb\c93725\c94118\c94510;\csgenericrgb\c12549\c0\c38824;\csgenericrgb\c0\c12157\c40392;
+\csgenericrgb\c96863\c96863\c96863;\csgenericrgb\c7843\c0\c25490;\csgenericrgb\c19216\c19216\c19216;\csgenericrgb\c14902\c14902\c14902;\csgenericrgb\c94902\c94902\c94902;
+\csgenericrgb\c10196\c10196\c10196;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
@@ -34,46 +40,49 @@ THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python gpuTest.py\
 \
 Unlink:\
   		
-\fs26 \cf5 \cb6 \expnd0\expndtw0\kerning0
-git remote rm origin\
+\fs26 git remote rm origin\
 		rm .git/FETCH_HEAD
-\fs24 \cf5 \cb6 \expnd0\expndtw0\kerning0
-\
+\fs24 \
 
-\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\fs48 \cf2 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\fs22 \cf7 FROM:	\cf8 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html\
-\cf7 \
+\fs22 \cf8 FROM:	\cf9 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html\
+\cf8 \
 remove a git directory:\cf0  http://stackoverflow.com/questions/1514054/how-do-i-delete-a-local-repository-in-git \
 						
 \fs26 \cf5 \cb6 \expnd0\expndtw0\kerning0
 \CocoaLigature1 rm -rf .git*
-\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\fs22 \cf0 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
 \
-\cf9 git clone my server repository:\cf0  git clone https://github.com/while519/LEDF_release.git\
+\cf10 git clone my server repository:\cf0  git clone https://github.com/while519/LEDF_release.git\
 \
-\cf9 for the successfully push do:\cf0  git remote set-url origin https://while519@github.com/while519/LEDF_release.git\
+\pard\pardeftab720\partightenfactor0
+
+\fs26 \cf11 \cb12 \expnd0\expndtw0\kerning0
+\CocoaLigature1 rename branch: git branch -m <newname>
+\fs22 \cf0 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\cf10 for the successfully push do:\cf0  git remote set-url origin https://while519@github.com/while519/LEDF_release.git\
 \
-\cf9 clone remote branch:
+\cf10 clone remote branch:
 \fs26 \cf5 \cb6 \expnd0\expndtw0\kerning0
 \CocoaLigature1 git branch -a\
 				  git checkout -b <branch-name> <remote-branch_name>\
 \
-\cf10 \expnd0\expndtw0\kerning0
-push all changes in all branches: \cf5 \expnd0\expndtw0\kerning0
-git push -all origin\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf13 push all changes in all branches: \cf5 git push -all origin\
 \
 \pard\pardeftab720\partightenfactor0
-\cf10 \expnd0\expndtw0\kerning0
-keep empty folder:\cf5  touch /path/to/emptydirectory/.gitkeep\
+\cf13 keep empty folder:\cf5  touch /path/to/emptydirectory/.gitkeep\
 \
-\cf11 for git pull:\cf5  \
+\cf14 for git pull:\cf5  \
 git reset --hard\
 git branch --set-upstream foo upstream/foo\
 \
 \pard\pardeftab720\partightenfactor0
-\cf9 clean untracked file: \cf5 \
+\cf10 clean untracked file: \cf5 \
 http://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-branch\
 \
 \pard\pardeftab720\partightenfactor0
@@ -83,50 +92,49 @@ git clean -f\
 git clean -df
 \fs26 \
 \
+untracking files: http://source.kohlerville.com/2009/02/untrack-files-in-git/\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Linux\
+\fs48 \cf2 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Linux\
 \pard\pardeftab720\qj\partightenfactor0
 
-\f2\fs30 \cf9 \cb12 \expnd0\expndtw0\kerning0
-\CocoaLigature1 Compression\cf13 :\cf0  	tar -czvf archive.tar.gz stuff\
+\f2\fs30 \cf10 \cb15 \expnd0\expndtw0\kerning0
+\CocoaLigature1 Compression\cf16 :\cf0  	tar -czvf archive.tar.gz stuff\
 \pard\pardeftab720\partightenfactor0
-\cf9 Extraction:\cf0  	tar -xzvf archive.tar.gz\
+\cf10 Extraction:\cf0  	tar -xzvf archive.tar.gz\
 \
 vim: Ctrl + f\
 		Ctrl + b\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Mac
-\f2\fs30 \cf0 \cb12 \expnd0\expndtw0\kerning0
+\f0\fs48 \cf2 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Mac
+\f2\fs30 \cf0 \cb15 \expnd0\expndtw0\kerning0
 \CocoaLigature1 \
 \pard\pardeftab720\partightenfactor0
-\cf0 \expnd0\expndtw0\kerning0
-configure ssh: https://discussions.apple.com/message/27650022#27650022\
+\cf0 configure ssh: https://discussions.apple.com/message/27650022#27650022\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Applications/MATLAB_R2016a.app/bin/matlab 
-\f3\fs30 \cf14 \expnd0\expndtw0\kerning0
+\f0\fs22 \cf0 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Applications/MATLAB_R2016a.app/bin/matlab 
+\f3\fs30 \cf17 \expnd0\expndtw0\kerning0
 \CocoaLigature1 -nojvm\
 /Applications/Sublime\\ Text.app/bin
 \f0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
 \pard\pardeftab720\partightenfactor0
 
-\fs26 \cf15 \cb16 \expnd0\expndtw0\kerning0
+\fs26 \cf18 \cb19 \expnd0\expndtw0\kerning0
 \CocoaLigature1 alias matlab='/Applications/MATLAB_R2015a.app/bin/matlab -nodesktop'
-\f2\fs30 \cf0 \cb12 \expnd0\expndtw0\kerning0
-\
+\f2\fs30 \cf0 \cb15 \
 ssh -X yuwu@dh077198.eeng.liv.ac.uk\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Python\
+\f0\fs48 \cf2 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 # Python\
 \pard\pardeftab720\partightenfactor0
 
-\f2\fs30 \cf0 \cb12 \expnd0\expndtw0\kerning0
+\f2\fs30 \cf0 \cb15 \expnd0\expndtw0\kerning0
 \CocoaLigature1 Virtual environment: http://docs.python-guide.org/en/latest/dev/virtualenvs/\
 \
 virtualenv python3 myproject1\
@@ -136,13 +144,13 @@ rm -rf myproject1\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 ln -s /Applications/Sublime\\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl\
+\f0\fs22 \cf0 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 ln -s /Applications/Sublime\\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl\
 \
 matplotlib work in virtualenv: http://blog.rousek.name/2015/11/29/adventure-with-matplotlib-virtualenv-and-macosx/\
 \
 \pard\pardeftab720\partightenfactor0
 
-\f3\fs32 \cf17 \expnd0\expndtw0\kerning0
+\f3\fs32 \cf20 \expnd0\expndtw0\kerning0
 \CocoaLigature1 #!/
 \b usr
 \b0 /
@@ -155,11 +163,11 @@ matplotlib work in virtualenv: http://blog.rousek.name/2015/11/29/adventure-with
 \ls1\ilvl0
 \f0\fs28 \cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
 echo $PATH
-\f3\fs30 \cb1  and copy it's value\
+\f3\fs30 \cb7  and copy it's value\
 \ls1\ilvl0
 \f0\fs28 \cb6 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
 export PATH=""
-\f3\fs30 \cb1 \
+\f3\fs30 \cb7 \
 \ls1\ilvl0
 \f0\fs28 \cb6 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
 export PATH="/path/you/want/to/keep"}
